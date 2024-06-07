@@ -49,7 +49,7 @@
           <div class="grid-item-contact">
             <h5>GET IN TOUCH</h5><br>
             <p>Our helpline is always opened for your feedbacks and inquiries. Kindly drop your messages <br>below and be rest assured that we would get back to you as soon as possible.</p><br><br>
-            <form class="" action="CONTACT.html" method="post">
+            <form action="submit_contact.php" method="post">
               <label for="fname">First name</label><br>
               <input type="text" id="fname" name="fname" required autocomplete="on"><br>
               <label for="lname">Last name</label><br>
@@ -57,16 +57,14 @@
               <label for="email">Email</label><br>
               <input type="email" id="email" name="email" required autocomplete="on"><br>
               <label for="phone">Phone No</label><br>
-              <input type="tel" id="phone" name="phone" pattern="[0-9]{4}-[0-9]{3}-[0-9]{4}" placeholder="0800-123-4567"required autocomplete="on"><br>
+              <input type="tel" id="phone" name="phone" pattern="[0-9]{4}-[0-9]{3}-[0-9]{4}" placeholder="0800-123-4567" required autocomplete="on"><br>
               <label for="message">Message</label><br>
               <textarea id="message" name="message" rows="10" cols="80"></textarea><br>
               <input type="submit" value="Send">
             </form>
           </div>
         </div>
-
     </main>
-
   <footer class="content">
     <div class="section">
       <div class="quicklinks">
@@ -91,7 +89,6 @@
         <a href="#" target="_blank"><img src="icons/x.png"></a>
         <a href="#"><img src="icons/google.png"></a>
       </div>
-
 <button onclick="topFunction()" id="myBtn" title="Back to top"><img src="icons/arrow-up.png"></i>
 </button>
 <script>
@@ -99,15 +96,15 @@
   window.onscroll= function () {scrollFunction()};
   function scrollFunction() {
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    mybutton,style.display = "block";
-  } else {
-    mybutton.style.display = "block";
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
   }
-}
-function topFunction() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
-}
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
 </script>
     </div>
   </footer>
